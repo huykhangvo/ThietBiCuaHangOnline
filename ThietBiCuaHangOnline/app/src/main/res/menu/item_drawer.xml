@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_trangchu"
+            android:icon="@drawable/ic_home"
+            android:state_pressed="true"
+            android:title="Trang chủ" />
+        <item
+            android:id="@+id/item_dienthoai"
+            android:icon="@drawable/ic_phone"
+            android:title="Điện thoại" />
+        <item
+            android:id="@+id/item_laptop"
+            android:icon="@drawable/ic_laptop"
+            android:title="Laptop" />
+        <item
+            android:id="@+id/item_maytinhbang"
+            android:icon="@drawable/ic_tablet"
+            android:title="Máy tính bảng" />
+        <item
+            android:id="@+id/item_phukien"
+            android:icon="@drawable/ic_phukien"
+            android:theme="@style/TextPhuKien"
+            android:title="Phụ kiện" />
+    </group>
+    <item
+        android:id="@+id/item_phukien2"
+        android:icon="@android:drawable/stat_sys_speakerphone"
+        android:title="Phu kiện khác">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Pin sạc" />
+                <item android:title="Cáp sạc" />
+                <item android:title="Thẻ nhớ" />
+            </group>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_gioithieu"
+            android:icon="@drawable/ic_gioithieu"
+            android:title="Giới thiệu" />
+        <item
+            android:id="@+id/item_thongtin"
+            android:icon="@drawable/ic_thongtin"
+            android:title="Thông tin" />
+        <!--<item
+            android:actionLayout="@layout/action_view_switch"
+            android:icon="@drawable/ic_new"
+            android:title="Download only" />-->
+    </group>
+</menu>

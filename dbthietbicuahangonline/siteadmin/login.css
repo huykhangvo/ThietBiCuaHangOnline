@@ -1,0 +1,353 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	background-image: url('image/background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	color: white;
+}
+/* CSS BOX_LOGIN */
+.login{
+	width: 35%;
+	height: 82%;
+	background:  linear-gradient(to top, #ad2f2a91 40%, #972aad91 60%);
+	margin:  5rem auto;
+	padding: 1rem;
+	position: relative;
+	text-align: center;
+	box-shadow: 0 2px 5px black;
+}
+.img{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+/* .img img{
+	width: 100%;
+} */
+.box{
+	margin: 10rem auto 0;
+}
+::placeholder {
+    color: white;
+    font-size: 18px;
+    
+}
+.box .row{
+	margin-bottom: 1rem;
+}
+.box .row .name, .pass{
+	width: 40%;
+	border:  none;
+	background: none;
+	border-bottom:  2px solid rgb(233, 30, 99);
+	color: white;
+	padding: .3rem;
+	font-size: 16px;
+	outline: none;
+}
+.row:nth-child(3){
+	margin: 2.5rem 0;
+}
+
+.box .row .submit{
+	width: 150px;
+	padding: .5rem 3rem;
+	background: rgb(233, 30, 99);
+	text-decoration: none;
+	color: white;
+	/* display: none; */
+}
+
+/* HOVER */
+.row .name:focus, .row .pass:focus{
+	transition: 220ms ease-in-out;
+	width: 60%;
+	border-bottom: 2px solid black;
+	box-shadow: 0 2px 5px gray;
+}
+.submit:hover{
+	box-shadow: 0 2px 5px black;
+	transition: 220ms ease-in-out;
+}
+
+@keyframes name{
+	0%, 40%, 70%  {
+		border-radius: 35px 200px 160px 200px;
+		width: 1px;
+		background: linear-gradient(to top, #CC3A00 50%, #ED6807 100%);
+		padding: 0 13px 0 0; 
+		position: relative;
+		top: -17rem;
+		margin-left: -56px;
+	}
+	40%, 70% {
+        top: -14rem;
+        border: none;
+        margin-left: -56px;
+    }
+    70% {
+        top: 0px;
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.name {
+	animation-name: name;
+	animation-duration: 2.5s;
+}
+@keyframes pass{
+	0% {
+		border-radius: 35px 200px 160px 200px;
+		width: 1px;
+		background: linear-gradient(to top, #CC3A00 50%, #ED6807 100%);
+		padding: 0 13px 0 0; 
+		position: relative;
+		top: -20rem;
+		 margin-left: -70px;
+	}
+	40%, 70% {
+        /* border-radius: 35px 200px 162px 200px; */
+        width: 1px;
+        background: linear-gradient(to top, #CC3A00 50%, #ED6807 100%);
+        transform: rotate(90deg);
+        padding: 0px 13px 0px 0px;
+        position: relative;
+        top: -14rem;
+        border: none;
+        margin-left: -56px;
+    }
+    70% {
+        top: 0px;
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.pass {
+	animation-name: pass;
+	animation-duration: 1.5s;
+}
+@keyframes submit{
+	0% {
+		border-radius: 35px 200px 160px 200px;
+		width: 0;
+		background: rgb(233, 30, 99);
+		padding: 0 13px 0 0; 
+		position: relative;
+		top: -20rem;
+		 margin-left: -56px;
+		 font-size: 0;
+
+	}
+	40%, 70% {
+        border-radius: 35px 200px 162px 200px;
+        width: 0;
+        background: linear-gradient(to top, #CC3A00 50%, #ED6807 100%);
+        transform: rotate(90deg);
+        padding: 0px 13px 0px 0px;
+        position: relative;
+        top: -17rem;
+        border: none;
+         margin-left: -56px;
+		 font-size: 0;
+
+    }
+    70% {
+        width: 1px;
+        top: 0px;
+		font-size: 2px;
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.submit {
+	animation-name: submit;
+	animation-duration: 4.5s;
+}
+@keyframes span{
+	0% {
+		border-radius: 35px 200px 160px 200px;
+		width: 0;
+		background: linear-gradient(to top, #CC3A00 50%, #ED6807 100%);
+		padding: 0 13px 0 0; 
+		position: relative;
+		top: -25rem;
+		 /* margin-left: -56px; */
+		 font-size: 0;
+		
+	}
+	30%, 70% {
+        border-radius: 35px 200px 162px 200px;
+        width: .5px;
+        background: linear-gradient(to top, #CC3A00 50%, #ED6807 100%);
+        transform: rotate(90deg);
+        padding: 0px 13px 0px 0px;
+        position: relative;
+        top: -17rem;
+        border: none;
+         margin-left: 270px;
+		 font-size: 2px;
+
+    }
+    70% {
+        width: 1px;
+        top: 0px;
+        margin-left: -20rem;
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.span {
+	animation-name: span;
+	animation-duration: 4s;
+	border-left: 2px solid rgb(233, 30, 99);
+	 font-weight: bold; 
+	 padding-left: .5rem
+}
+/* CSS MẶT CƯỜI */
+#face
+		{
+			border: solid 2px black;
+		    /* background-color: #ebbf91; */
+		    background: linear-gradient(to top, #1DA4C1 50%, #14F3D6 100%);
+		    border-radius: 50%;
+		    width: 100%;
+		    height: 100%;
+		    position: relative;
+		    box-shadow: 2px 2px 20px black;
+		}
+		.eye 
+		{
+			width: 59%;
+		    position: absolute;
+		    top: 15%;
+		    left: 13%;
+		}
+			.eye-left, .eye-right
+			{
+				position: relative;
+		    float: left;
+		    width: 30px;
+		    height: 34px;
+		    border: solid 2px black;
+		    border-radius: 153% 141% 0% 0% / 82px 91px 0 0;
+		    margin-left: 15%;
+		    overflow: hidden;
+		    background-color: #E9E3E3;
+
+			}
+			.eye-right
+			{
+				left: 10%;
+
+			}
+				#eyeballs 
+				{
+					width: 28px;
+					height: 30px;
+					/* position: absolute; */
+					transition: 220ms;
+					margin-left: -.5rem;
+					margin-top: -.5rem;
+					border-radius: 50px;
+					background-color: black;
+				}
+				.eye:hover #eyeballs{
+					position: absolute;
+					
+					right: -.5rem;
+					bottom: -.5rem;
+					transform: rotate(49deg);
+					transform-origin: right center;
+					transition: transform 1.5s;
+				}
+
+
+	#mouth {
+		border: solid 1px black;
+	    height: 62px;
+	    width: 72%;
+	    position: absolute;
+	    bottom: 9px;
+	    left: 20px;
+	    border-radius: 0% 0% 160% 160% / 0% 0% 203px 200px;
+	    box-shadow: 21px 4px 3px black inset;
+	    background-color: #6a350a;
+	    overflow: hidden;}
+		.tongue
+		{
+		/* background-color:#f2dab4; */
+		background: linear-gradient(to top, #B88C8C 50%, #905A5A 100%);
+	    margin-top: 5%;
+	    height: 200px;
+	    width: 200px;
+	    border-radius: 111px;
+	    margin-left: 50%;
+	}
+
+	/* CSS RESPONSIVE */
+	@media screen and (max-width: 1200px) {
+		.login{
+		width: 40%;
+		height: 82%;
+		background:  linear-gradient(to top, #ad2f2a91 40%, #972aad91 60%);
+
+}
+	}
+	@media screen and (max-width: 992px) {
+		.login{
+			width: 55%;
+			background: #000000b8;
+			box-shadow: 0 2px 3px black;
+		}
+		body{
+			background-image: url('images/daNang.jpg');
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.login{
+			width: 60%;
+			background: linear-gradient(#0000ff8c ,green);
+
+			box-shadow: 0 2px 3px black;
+		}
+		body{
+			background-image: url('images/background3.jpg');
+			/* background-size: cover; */
+			background-size: 100% 100%;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.login{
+			width: 70%;
+			background: linear-gradient(#000000db, gray);
+			/* background: #000000b8; */
+			
+			box-shadow: 0 2px 3px black;
+
+		}
+		body, ::placeholder{
+			font-size: 14px;
+		}
+		body{
+			background-image: url('images/vl.jpg');
+		}
+		#face{
+			background-color: tomato;
+		}
+	}
+
